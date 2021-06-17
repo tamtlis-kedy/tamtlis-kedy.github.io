@@ -1,5 +1,4 @@
 # tamtlis-kedy.github.io
----
 Burda kendi sitemi yazıyorum.
 --
 [Discord](https://discord.gg/XxGEsdHj9T)
