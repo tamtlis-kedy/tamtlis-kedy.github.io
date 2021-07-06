@@ -21,15 +21,22 @@ body {
 #bas img {
     height: 60px;
     cursor: pointer;
+    animation-name: b;
+    animation-duration: 400ms;
 }
 
 #bas img:hover {
     animation-name: a;
-    animation-duration: 100ms;
+    animation-duration: 400ms;
     height: 70px;
 }
 
 @keyframes a {
     from {height: 60px;}
     to {height: 70px;}
+}
+
+@keyframes b {
+    from {height: 70px;}
+    to {height: 60px;}
 }
