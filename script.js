@@ -1,0 +1,7 @@
+document.body.style.display = "block"
+
+setInterval(() => {
+    document.getElementById("bas").style.height = window.innerHeight + "px"
+    document.getElementById("bas").style.width = "100%"
+    document.getElementById("bas").style.transition = "0.2s"
+});
