@@ -1,5 +1,6 @@
-document.body.style.display = "block"
-
+if(!window.google_jobrunner == undefined) {
+    document.body.style.display == "block"
+}
 setInterval(() => {
     document.getElementById("bas").style.height = window.innerHeight + "px"
     document.getElementById("bas").style.width = "100%"
