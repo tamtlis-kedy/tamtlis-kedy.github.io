@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>İsmail Uygar Kaman</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="a">
+            <h1 class="m0">ismail uygar kaman</h1>
+            <p id="i" class="m0">hehe</p>
+        </div>
+        <div class ="alt">
+            <div style="height: 50px;"></div>
+            <div class="wow animate__fadeInRight al">
+                <h1>hakkımda</h1>
+                <p>doğum tarihi 9 eylül 2009. muğlalıyım beni tanıyan buraya ne yazacağımı söylesin.</p>
+            </div>
+            <div style="height: 10vh;"></div>
+            <div class="wow animate__fadeInLeft ar">
+                <h1>projelerim</h1>
+                <a onclick="window.open('https://instagram.com/tmtked.memes')" style="color:blue; cursor: pointer;">instagram botum</a>
+            </div>
+            <div style="height: 50px;"></div>
+            <div class="scl">
+                <h1 style="position: relative; bottom: 16px;">sosyal</h1>
+                <img src="ig.png" alt="@metaversesikermisin" class=" hwr" id="ig">
+                <img src="rd.png" alt="u/ismailuygar" class=" hwr" id="rd">
+            </div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW({
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate__animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }).init();
+    </script>
+    <script>
+        io = [
+            "öğrenci",
+            "yazılımcı",
+            "homofobik",
+            "minist"
+        ]
+        document.getElementById("i").className = "animate__animated animate__fadeIn"
+        document.getElementById("i").innerHTML = io[Math.floor(Math.random()*io.length)]
+        setInterval(() => {
+            document.getElementById("i").className = "animate__animated animate__fadeOut"
+            setTimeout(() => {
+                document.getElementById("i").innerHTML = io[Math.floor(Math.random()*io.length)]
+                document.getElementById("i").className = "animate__animated animate__fadeIn"
+            }, 500);
+        }, 2000);
+        document.getElementById("ig").onclick = ()=>{window.open("https://instagram.com/metaversesikermisin")}
+        document.getElementById("rd").onclick = ()=>{window.open("https://reddit.com/user/ismailuygar")}
+
+    </script>
+</html>
